@@ -4,12 +4,13 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: ${nacos.url}:8001
+        server-addr: 116.62.174.104:8848
         group: DEFAULT_GROUP
         prefix: febs-auth
         file-extension: yaml
+        enabled: false
       discovery:
-        server-addr: ${nacos.url}:8001
+        server-addr: 116.62.174.104:8848
   thymeleaf:
     cache: false
 
